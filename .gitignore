@@ -9,6 +9,7 @@ api/node_modules
 
 # Production
 /build
+/.next
 
 # misc
 .DS_Store
@@ -22,8 +23,23 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment files
+# Environment files - NEVER commit these!
 .env
+.env.*
+.env*
+*.env
+.env copy.local
+.env.deployment
+
+# Token deployment scripts and sensitive data
+token-deployment-scripts/
+*private*key*
+*privatekey*
+*private_key*
+*-execution-ready.json
+*-final-deployment.json
+bwriter-execution-ready.json
+bwriter-final-deployment.json
 
 # Old Electron files
 electron-backup/
